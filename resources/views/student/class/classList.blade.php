@@ -19,14 +19,14 @@
             <div class="card-body">
               <h5 class="card-title">{{ $item->class_name }}</h5>
               <p class="card-text">Fee : {{ $item->fee }}</p>
-              <hr> 
+              <hr>
               <p>Class Type : <b>{{ $item->class_type }}</b></p>
               <p>Time : {{ $item->start_date }} to {{ $item->end_date }}</p>
               <p>Teacher : {{ $item->name }}</p>
-                <a href="{{ route('lookClassInformation',[$item->class_id])}}" class="btn btn-success float-right">look Class Information</a>
+                <a href="{{ route('lookClassInformation',[$item->class_id])}}" class="btn btn-success float-right">look For Class Information</a>
             </div>
           </div>
-        </div> 
+        </div>
         @endforeach
 
     </div>
